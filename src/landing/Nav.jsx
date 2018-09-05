@@ -9,7 +9,7 @@ const navLinks = Object.freeze({
   platforms: { text: "Platforms", link: "#RobloxDeviceText" }
 });
 
-export default class Nav extends Component {
+export default class LandingNav extends Component {
   constructor(props) {
     super(props);
     this.state = { selected: navLinks.play };

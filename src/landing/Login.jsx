@@ -1,9 +1,15 @@
 import React, { Component } from "react";
 
-export default class Login extends Component {
+import styles from "styles/landing.scss";
+
+export default class LandingLogin extends Component {
   render() {
     return (
-      <div/>
+      <form className={styles.login}>
+        <input type="text" placeholder="Username"/>
+        <input type="password" placeholder="Password"/>
+        <button>Log In</button>
+      </form>
     );
   }
 }

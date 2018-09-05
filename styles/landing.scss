@@ -8,6 +8,35 @@
   height: 100vh;
   width: 100vw;
 
+  button {
+    background-color: #02b757;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 8px 0;
+
+    &:hover {
+      background-color: #3FC679;
+    }
+  }
+
+  input {
+    border-radius: 3px;
+    border: solid #dddddd 1px;
+    color: gray;
+    font-size: inherit;
+    line-height: 1.33;
+    padding: 2px 5px;
+
+    &:focus {
+      border-color: #7ab4e6;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #c5c5c5;
+    }
+  }
+
   header {
     align-items: center;
     background-color: rgba(0,0,0,0.35);
@@ -19,7 +48,7 @@
 
     img {
       height: 36px;
-      width: 36px;
+      width: 50px;
     }
 
     nav {
@@ -40,16 +69,43 @@
         }
 
         &.active {
-          border-bottom: solid #ffffff 1px;
+          border-bottom: solid #ffffff 2px;
         }
       }
+    }
+  }
+
+  .login {
+    align-items: baseline;
+    display: flex;
+
+    &>* {
+      margin-right: 5px;
+    }
+
+    button {
+      font-size: 16px;
+      margin-right: 0;
+      padding: 8px 5px;
+    }
+
+    input {
+      height: 34px;
+      padding: 6px 12px;
+      font-size: 16px;
+      font-weight: lighter;
+      line-height: 1.25;
+      color: #555;
     }
   }
 
   .action {
     align-items: flex-start;
     display: flex;
-    margin-top: 124px;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 0 20px;
+    width: 100%;
 
     img {
       background-size: auto 130px;
@@ -63,6 +119,9 @@
       background-color: rgba(255,255,255,0.95);
       display: flex;
       flex-direction: column;
+      font-size: 18px;
+      min-width: 50%;
+      max-width: calc(100% - 457px);
       padding: 15px;
 
       &>* {
@@ -70,6 +129,7 @@
       }
 
       h3 {
+        color: #696969;
         font-size: 24px;
         font-weight: 300;
         line-height: 1.1;
@@ -77,34 +137,6 @@
         margin-bottom: 15px;
         text-align: center;
         text-transform: uppercase;
-      }
-
-      input[type=text] {
-        border-radius: 3px;
-        border: solid #dddddd 1px;
-        color: gray;
-        font-size: 20px;
-        line-height: 1.33;
-        padding: 2px 5px;
-
-        &:focus {
-          border-color: lightblue;
-        }
-
-        &::placeholder {
-          color: #c5c5c5;
-        }
-      }
-
-      button {
-        background-color: #02b757;
-        border-radius: 3px;
-        color: #ffffff;
-        padding: 8px 0;
-
-        &:hover {
-          background-color: #3FC679;
-        }
       }
     }
   }

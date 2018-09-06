@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 
 import styles from "styles/landing.scss";
 
-export default class Action extends Component {
+export default class LandingAction extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -28,7 +28,7 @@ export default class Action extends Component {
 
     return (
       <div className={styles.action}>
-        <img src={utils.staticUrl("images/logo.svg")}/>
+        <img src={utils.staticUrl("images/logo.png")}/>
         <form onSubmit={event => this.searchForPlace(event)}>
           <h3>Search for a place by ID!</h3>
           <input type="text" placeholder="Place ID" onChange={event => this.updateRootPlaceId(event)}/>

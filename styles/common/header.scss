@@ -1,0 +1,18 @@
+@import "styles/main/_theme";
+
+.header {
+  align-items: center;
+  background-color: $themeColorCommonNavBg;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 4px 15px;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+
+  img {
+    width: 118px;
+    height: 30px;
+  }
+}

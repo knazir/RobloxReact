@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import styles from "styles/landing.scss";
 
-export default class LandingInlineLogin extends Component {
+export default class LandingLogin extends Component {
   render() {
     return (
       <form className={styles.login}>

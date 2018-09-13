@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
-export default class Nav extends Component {
+import styles from "styles/main/header.scss";
+
+export default class CommonNav extends Component {
   render() {
     return (
       <nav>
-        <h1>Tomato</h1>
+
       </nav>
     );
   }

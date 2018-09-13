@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import LandingInlineLogin from "./LandingInlineLogin";
+import LandingLogin from "./LandingLogin";
 import LandingNav from "./LandingNav";
 
 export default class LandingHeader extends Component {
@@ -8,7 +8,7 @@ export default class LandingHeader extends Component {
     return (
       <header>
         <LandingNav/>
-        <LandingInlineLogin/>
+        <LandingLogin/>
       </header>
     );
   }

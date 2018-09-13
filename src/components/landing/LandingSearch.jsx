@@ -1,9 +1,16 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import { Redirect } from "react-router-dom";
 
 import styles from "styles/landing.scss";
 
-export default class LandingAction extends Component {
+export default class LandingSearch extends Component {
+  static get propTypes() {
+    return {
+      fetchPlace: PropTypes.func
+    };
+  }
+
   constructor(props) {
     super(props);
     this.state = {

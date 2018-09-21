@@ -30,6 +30,9 @@ class GameDetails extends Component {
   }
 
   render() {
+    if (this.props.place) {
+      document.title = this.props.place.name;
+    }
     return (
       <div className={styles.gameDetails}>
         {this.props.place ? this._getPlaceDetails() : <div/>}
